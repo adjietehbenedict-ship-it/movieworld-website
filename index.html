@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover movies, anime and series on MovieWorld.">
+  <title>MovieWorld — Discover Movies</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="movies.js" defer></script>
+  <script src="home.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">
+      Movie<span>World</span>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#collection">Collection</a>
+      <a href="https://t.me/kryptonmovies"
+         target="_blank" rel="noopener noreferrer">Telegram</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p class="accent">YOUR ENTERTAINMENT HUB</p>
+    <h1>Find your next favourite story.</h1>
+    <p>Explore movie, anime and series listings, read descriptions and discover official trailers.</p>
+    <p>
+      <a class="button" href="#collection">Explore Collection</a>
+      <a class="button secondary"
+         href="https://t.me/kryptonmovies"
+         target="_blank" rel="noopener noreferrer">Join Telegram</a>
+    </p>
+  </section>
+
+  <main id="collection">
+    <h2>Explore the collection</h2>
+
+    <div class="toolbar">
+      <input id="search" type="search"
+        placeholder="Search titles or genres..."
+        aria-label="Search titles or genres">
+
+      <select id="category" aria-label="Filter category">
+        <option value="All">All categories</option>
+        <option value="Movie">Movies</option>
+        <option value="Anime">Anime</option>
+        <option value="Series">Series</option>
+      </select>
+    </div>
+
+    <p id="resultCount" class="muted" aria-live="polite"></p>
+    <div class="grid" id="movieGrid"></div>
+
+    <p id="empty" class="muted" hidden>
+      No titles found. Try another search.
+    </p>
+
+    <section class="notice">
+      <h2>Join our Telegram community</h2>
+      <p class="muted">
+        Discover links to authorized downloads, licensed videos
+        and official trailers.
+      </p>
+      <a class="button"
+         href="https://t.me/kryptonmovies"
+         target="_blank" rel="noopener noreferrer">
+        Visit @kryptonmovies
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 MovieWorld. Share only content you are authorized to distribute.
+  </footer>
+</body>
+</html>

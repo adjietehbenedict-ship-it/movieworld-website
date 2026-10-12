@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movie Details — MovieWorld</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="movies.js" defer></script>
+  <script src="detail.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">
+      Movie<span>World</span>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#collection">Collection</a>
+      <a href="https://t.me/kryptonmovies"
+         target="_blank" rel="noopener noreferrer">Telegram</a>
+    </nav>
+  </header>
+
+  <main>
+    <p><a href="index.html">← Back to MovieWorld</a></p>
+
+    <section id="detail" class="detail" hidden>
+      <img id="poster" class="detail-poster" alt="Movie poster">
+
+      <div>
+        <p id="category" class="accent"></p>
+        <h1 id="title"></h1>
+        <p id="meta" class="muted"></p>
+
+        <h2>Synopsis</h2>
+        <p id="description" class="muted"></p>
+
+        <div class="actions">
+          <a id="trailer" class="button" hidden
+             target="_blank" rel="noopener noreferrer">
+            Watch Official Trailer
+          </a>
+
+          <a id="download" class="button secondary"
+             target="_blank" rel="noopener noreferrer">
+            Get Authorized Download
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="notFound" class="notice" hidden>
+      <h2>Title not found</h2>
+      <p class="muted">
+        This listing may have been removed or its link may be incorrect.
+      </p>
+      <a class="button" href="index.html">Browse Collection</a>
+    </section>
+
+    <section class="notice">
+      <p class="muted">
+        Download availability depends on the rights holder's permission.
+        MovieWorld does not provide unauthorized copies.
+      </p>
+    </section>
+  </main>
+
+  <footer>© 2026 MovieWorld</footer>
+</body>
+</html>
